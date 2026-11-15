@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+    <header class="main-header">
+        <div class="logo">Milk Cafe</div>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="menu.html">МЕНЮ</a></li>
+                <li><a href="price.html">ПРАЙС</a></li>
+                <li><a href="#about">ПРО НАС</a></li>
+                <li><a href="contacts.html">КОНТАКТИ</a></li>
+            </ul>
+        </nav>
+
+        <button id="open-modal-btn">Зв'язатися з нами</button>
+
+        <button class="hamburger" aria-label="Меню">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="mobile-menu">
+            <a href="menu.html">Меню</a>
+            <a href="price.html">Прайс</a>
+            <a href="#about">Про нас</a>
+            <a href="contacts.html">Контакти</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <a href="index.html">
+            <img src="img/logo.png" alt="Логотип Milk Cafe" width="100">
+        </a>
+        <img src="img/hero.jpg" alt="Інтер'єр" width="10%">
+        <h1>Milk Cafe</h1>
+        <p><strong>Справжня кава на Шота Руставелі, 16</strong></p>
+        <a href="#menu"><button type="button">Дивитись меню</button></a>
+
+        <div class="scroll-down">
+            <span>↓</span>
+        </div>
+    </div>
+    
+    <main class="container">
+        <section id="about" class="about-section">
+            <h2>Про нас</h2>
+            <p><img src="img/about.jpg" alt="Бариста" class="float-img">Ми — локальна кав'ярня в центрі Києва. Працюємо виключно зі свіжим обсмаженням класу <em>Specialty</em> та топовим обладнанням. Наша мета — готувати ідеальну чашку кави для вашого продуктивного дня. Зерно ми закуповуємо напряму в перевірених обсмажувальників і щотижня оновлюємо асортимент, щоб ви могли спробувати каву з Ефіопії, Колумбії, Кенії та інших країн. Наші бариста регулярно проходять навчання й залюбки підкажуть, який напій обрати саме під ваш настрій. А для тих, хто працює чи навчається, у нас є затишні місця з розетками та швидкий Wi-Fi.</p>
+            
+            <h3>Як ми обсмажуємо каву:</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kZcGeKASj0E?si=HapKcYvEQRiLrF7d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            <h3>Атмосфера нашого закладу (Аудіо):</h3>
+            <audio controls>
+                <source src="Nobody_s-Home.mp3" type="audio/mpeg">
+                Ваш браузер не підтримує аудіо.
+            </audio>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Швидкість</h3>
+                <p>Готуємо каву, поки ви оплачуєте замовлення.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Якість</h3>
+                <p>Лише свіже зерно класу Specialty.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Ціна</h3>
+                <p>Справжня кава доступна кожному.</p>
+            </div>
+        </section>
+
+        <h2>Галерея</h2>
+        <section class="gallery">
+            <div class="gallery-item item-1"><img src="img/hero.jpg" alt="Інтер'єр кав'ярні" style="width:100%; height:100%; object-fit: cover;"></div>
+            <div class="gallery-item item-2"><img src="img/about.jpg" alt="Бариста за роботою" style="width:100%; height:100%; object-fit: cover;"></div>
+            <div class="gallery-item item-3"><img src="img/Menu.jpg" alt="Кава та круасан" style="width:100%; height:100%; object-fit: cover;"></div>
+            <div class="gallery-item item-4"><img src="img/about.jpg" alt="Приготування кави" style="width:100%; height:100%; object-fit: cover;"></div>
+            <div class="gallery-item item-5"><img src="img/hero.jpg" alt="Зал кав'ярні" style="width:100%; height:100%; object-fit: cover;"></div>
+        </section>
+
+        <section id="menu">
+            <h2>Наше меню</h2>
+            <div class="card">
+                <p>Насолоджуйтесь нашими найкращими стравами протягом усього дня!</p>
+            </div>
+            <img src="img/Menu.jpg" alt="Кава" width="10%">
+            <ul>
+                <li><strong>Класичне еспресо</strong> — ₴50<br><em>(100% арабіка з Ефіопії, щільна крема та ноти темного шоколаду)</em></li>
+                <li><strong>Авторський флет-вайт</strong> — ₴80<br><em>(Подвійний шот еспресо, ідеально спінене молоко, баланс ніжності та міцності)</em></li>
+                <li><strong>Лате солона карамель</strong> — ₴95<br><em>(Еспресо, молоко та крафтова карамель із морською сіллю)</em></li>
+                <li><strong>Мигдальний круасан</strong> — ₴110<br><em>(Хрустке листкове тісто на вершковому маслі, щедра порція франжипану)</em></li>
+                <li><strong>Веганські панкейки</strong> — ₴130<br><em>(Вівсяне борошно, подаються зі свіжими ягодами та кленовим сиропом)</em></li>
+            </ul>
+            
+            <div class="catalog">
+                <div class="product-item">
+                    <span class="badge">New</span>
+                    <img src="img/Menu.jpg" alt="Класичне еспресо">
+                    <h3>Класичне еспресо</h3>
+                    <p>₴50</p>
+                    <button type="button">Замовити</button>
+                </div>
+                <div class="product-item">
+                    <span class="badge">Sale</span>
+                    <img src="img/Menu.jpg" alt="Авторський флет-вайт">
+                    <h3>Авторський флет-вайт</h3>
+                    <p>₴80</p>
+                    <button type="button">Замовити</button>
+                </div>
+                <div class="product-item">
+                    <span class="badge">New</span>
+                    <img src="img/Menu.jpg" alt="Лате солона карамель">
+                    <h3>Лате солона карамель</h3>
+                    <p>₴95</p>
+                    <button type="button">Замовити</button>
+                </div>
+                <div class="product-item">
+                    <img src="img/Menu.jpg" alt="Мигдальний круасан">
+                    <h3>Мигдальний круасан</h3>
+                    <p>₴110</p>
+                    <button type="button">Замовити</button>
+                </div>
+                <div class="product-item">
+                    <img src="img/Menu.jpg" alt="Веганські панкейки">
+                    <h3>Веганські панкейки</h3>
+                    <p>₴130</p>
+                    <button type="button">Замовити</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tabs-container">
+            <h2>Наша кава</h2>
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="desc">Опис</button>
+                <button class="tab-btn" data-tab="chars">Характеристики</button>
+                <button class="tab-btn" data-tab="tab-reviews">Відгуки</button>
+            </div>
+
+            <div class="tabs-body">
+                <div id="desc" class="tab-content active">
+                    <p>Ми готуємо каву з 100% арабіки зі свіжим обсмаженням класу Specialty. Зерно обсмажується невеликими партіями, тому кожна чашка має яскравий смак і щільну крему.</p>
+                </div>
+                <div id="chars" class="tab-content">
+                    <ul>
+                        <li><strong>Сорт:</strong> 100% арабіка</li>
+                        <li><strong>Походження:</strong> Ефіопія, Колумбія, Кенія</li>
+                        <li><strong>Клас:</strong> Specialty (понад 80 балів Q-грейдерів)</li>
+                        <li><strong>Смакові ноти:</strong> темний шоколад, ягоди, карамель</li>
+                    </ul>
+                </div>
+                <div id="tab-reviews" class="tab-content">
+                    <p>«Найкращий флет-вайт у центрі Києва» — Олена</p>
+                    <p>«Бариста підказали зерно з Кенії — тепер беру тільки його» — Софія</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h2>Відгуки гостей</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h2>Олена</h2>
+                        <p>«Найкращий флет-вайт у центрі Києва. Заходжу щоранку перед парами.»</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2>Максим</h2>
+                        <p>«Затишно, швидкий Wi-Fi і розетки біля кожного столика. Ідеально для роботи.»</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2>Ірина</h2>
+                        <p>«Лате із солоною карамеллю — це любов з першого ковтка.»</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2>Андрій</h2>
+                        <p>«Мигдальний круасан хрусткий і свіжий, франжипану не шкодують.»</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2>Софія</h2>
+                        <p>«Бариста підказали зерно з Кенії — тепер беру тільки його.»</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2>Дмитро</h2>
+                        <p>«Веганські панкейки з ягодами — нарешті є що замовити на сніданок.»</p>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>        
+    </main>
+
+    <footer id="contacts">
+        <h2>Чекаємо в гості</h2>
+        <p>
+            Вул. Шота Руставелі, 16, Київ, Україна<br>
+            Пн-Нд 08:00 – 21:00<br>
+            <strong>+38 (099) 000-00-00</strong>
+            <p>Ми в соцмережах:
+                <ul>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                </ul>
+            </p>
+    </footer>
+
+    </div>
+
+    <a href="#" class="back-to-top">↑</a>
+
+    <div class="modal-overlay" id="my-modal">
+        <div class="modal-window">
+            <span class="close-modal">&times;</span>
+            <h2>Залиште заявку</h2>
+            <form>
+                <input type="text" placeholder="Ваше ім'я"><br><br>
+                <input type="tel" placeholder="Ваш телефон"><br><br>
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

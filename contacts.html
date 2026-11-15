@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Milk Cafe</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="price.html">Прайс</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Зв'яжіться з нами</h2>
+            <p>
+                Телефон: <a href="tel:+380990000000">+38 (099) 000-00-00</a>
+            </p>
+            <p>
+                Email: <a href="mailto:info@milkcafe.com">info@milkcafe.com</a>
+            </p>
+            <p>
+                Вул. Шота Руставелі, 16, Київ, Україна<br>
+                Пн-Нд 08:00 – 21:00
+            </p>
+        </section>
+       
+        <section>
+            <h2>Напишіть нам</h2>
+            <form action="#" method="POST">
+
+                <div>
+                    <label for="username">Ваше ім'я:</label><br>
+                    <input type="text" id="username" name="username" placeholder="Введіть ім'я" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="useremail">Ваш Email:</label><br>
+                    <input type="email" id="useremail" name="useremail" placeholder="example@mail.com" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="userpass">Пароль (для реєстрації в програмі лояльності):</label><br>
+                    <input type="password" id="userpass" name="password">
+                </div>
+                <br>
+
+                <div>
+                    <label for="message">Повідомлення:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="30" placeholder="Ваш відгук, побажання або питання"></textarea>
+                </div>
+                <br>
+
+                <div>
+                    <label for="topic">Тема звернення:</label>
+                    <select id="topic" name="topic">
+                        <option value="feedback">Відгук про заклад</option>
+                        <option value="booking">Бронювання столика</option>
+                        <option value="support">Техпідтримка сайту</option>
+                        <option value="sales">Співпраця / оптові закупівлі</option>
+                        <option value="other">Інше</option>
+                    </select>
+                </div>
+                <br>
+
+                <div>
+                    <p>Ваша стать:</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Чоловік</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Жінка</label>
+                </div>
+                <br>
+
+                <div>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Я даю згоду на обробку даних</label>
+                </div>
+                <br>
+
+                <button type="submit">Надіслати</button>
+                <button type="reset">Очистити</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
